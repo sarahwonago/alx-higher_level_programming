@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-for char in range(26):
-    if char != 4 and char != 16:
-        print("{:s}".format(chr(char + ord("a"))), end="")
+
+for character in range(97, 123):
+    if (character != 101 and character != 113):
+        print("{:c}".format(character), end='')

@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Defines class: Base"""
+"""Defines the base model class."""
 
 
 class Base:
-    """ Base class
-    The  class Base  will be the “base” of all other classes in this project.
+    """ Base model class
+    The  class will be the “base” of all other classes in this project.
 
     Private Class Attributes:
         __nb_object (int): Number of instantiated Base objects.
@@ -15,7 +15,7 @@ class Base:
 
         """Initializing a new Base.
         Args:
-            id (int): New Base Id.
+            id (int): New Base Id representing identity of object.
         """
 
         if (id is not None):

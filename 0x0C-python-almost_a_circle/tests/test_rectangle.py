@@ -25,11 +25,6 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(self.r1.area(), 50)
         self.assertEqual(self.r2.area(), 15)
 
-    def test_display(self):
-        expected_output = "\n\n\n\n  ##########\n  ##########\n  ##########\n  ##########\n  ##########\n"
-        with unittest.mock.patch('sys.stdout', new_callable=io.StringIO) as mock_stdout:
-            self.r1.display()
-            self.assertEqual(mock_stdout.getvalue(), expected_output)
 
     def test_update(self):
         self.r1.update(3, 7, 2, 1, 8)

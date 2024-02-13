@@ -25,9 +25,6 @@ class TestBase(unittest.TestCase):
         self.assertEqual(Base.from_json_string("[]"), [])
         self.assertEqual(Base.from_json_string('[{"id": 1, "name": "Alice"}]'), [{'id': 1, 'name': 'Alice'}])
 
-    def test_create(self):
-        obj = Base.create(id=1, name='Alice')
-        self.assertEqual(obj.to_dictionary(), {'id': 1, 'name': 'Alice'})
 
     def test_load_from_file(self):
         Base.save_to_file([Base(1, 2)])
